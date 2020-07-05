@@ -11,6 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ycm-core/YouCompleteMe'
+
+Plugin 'preservim/nerdtree'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -51,3 +53,4 @@ nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 nnoremap <F12> :YcmCompleter GoTo<CR>
 " Show warnings
 nnoremap <C-S-m> :YcmDiags<CR>
+nnoremap <C-b> :NERDTreeToggle<CR>
