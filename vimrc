@@ -11,7 +11,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ycm-core/YouCompleteMe'
-
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -43,3 +42,12 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+" ==============================================
+" Highlight searches
+set hlsearch
+" Show line number
+set number
+nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
+nnoremap <F12> :YcmCompleter GoTo<CR>
+" Show warnings
+nnoremap <C-S-m> :YcmDiags<CR>
