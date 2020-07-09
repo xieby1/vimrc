@@ -54,3 +54,10 @@ nnoremap <F12> :YcmCompleter GoTo<CR>
 " Show warnings
 nnoremap <C-S-m> :YcmDiags<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
