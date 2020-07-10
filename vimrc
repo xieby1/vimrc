@@ -51,6 +51,7 @@ set hlsearch
 set number
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 nnoremap <F12> :YcmCompleter GoTo<CR>
+nnoremap <S-F12> :YcmCompleter GoToDefinition<CR>
 " Show warnings
 nnoremap <C-S-m> :YcmDiags<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
