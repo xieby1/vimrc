@@ -13,6 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ycm-core/YouCompleteMe'
 
 Plugin 'preservim/nerdtree'
+
+Plugin 'airblade/vim-gitgutter'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -55,6 +57,9 @@ nnoremap <S-F12> :YcmCompleter GoToDefinition<CR>
 " Show warnings
 nnoremap <C-S-m> :YcmDiags<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
+let g:gitgutter_signs = 0
+let g:gitgutter_highlight_lines = 0
+nnoremap <S-g> :GitGutterLineHighlightsToggle<CR>:GitGutterSignsToggle<CR>
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
