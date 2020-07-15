@@ -60,6 +60,7 @@ nnoremap <C-b> :NERDTreeToggle<CR>
 let g:gitgutter_signs = 0
 let g:gitgutter_highlight_lines = 0
 nnoremap <Leader>g :GitGutterLineHighlightsToggle<CR>:GitGutterSignsToggle<CR>
+nmap <leader>D <plug>(YCMHover)
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
