@@ -13,3 +13,9 @@
 [submodule "bundle/vim-smoothie"]
 	path = bundle/vim-smoothie
 	url = https://github.com/psliwka/vim-smoothie.git
+[submodule "bundle/vim-ingo-library"]
+	path = bundle/vim-ingo-library
+	url = https://github.com/inkarkat/vim-ingo-library.git
+[submodule "bundle/vim-mark"]
+	path = bundle/vim-mark
+	url = https://github.com/inkarkat/vim-mark.git
