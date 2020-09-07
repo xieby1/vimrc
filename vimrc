@@ -52,24 +52,33 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 " ==============================================
-" Highlight searches
+
+" vim
+"" Highlight searches
 set hlsearch
-" Show line number
+"" Show line number
 set number
+filetype plugin indent on
+"" show existing tab with 4 spaces width
+set tabstop=4
+"" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+"" On pressing tab, insert 4 spaces
+set expandtab
+
+" youcompleteme
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 nnoremap <F12> :YcmCompleter GoTo<CR>
 nnoremap <S-F12> :YcmCompleter GoToDefinition<CR>
-" Show warnings
+"" Show warnings
 nnoremap <C-S-m> :YcmDiags<CR>
-nnoremap <C-b> :NERDTreeToggle<CR>
-let g:gitgutter_signs = 0
-let g:gitgutter_highlight_lines = 0
-nnoremap <Leader>g :GitGutterLineHighlightsToggle<CR>:GitGutterSignsToggle<CR>
 nmap <leader>D <plug>(YCMHover)
-filetype plugin indent on
-" show existing tab with 4 spaces width
-set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
-set expandtab
+
+" nerdtree 
+nnoremap <C-b> :NERDTreeToggle<CR>
+
+" gitgutter
+let g:gitgutter_signs = 1
+let g:gitgutter_highlight_lines = 1
+nnoremap <Leader>g :GitGutterLineHighlightsToggle<CR>:GitGutterSignsToggle<CR>
+
