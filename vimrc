@@ -20,6 +20,8 @@ Plugin 'psliwka/vim-smoothie'
 
 Plugin 'inkarkat/vim-mark'
 Plugin 'inkarkat/vim-ingo-library'
+
+Plugin 'rhysd/git-messenger.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
