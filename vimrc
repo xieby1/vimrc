@@ -67,11 +67,14 @@ set tabstop=4
 set shiftwidth=4
 "" On pressing tab, insert 4 spaces
 set expandtab
+"" tags support, ';' means upward search, refering to http://vimdoc.sourceforge.net/htmldoc/editing.html#file-searching
+set tags=./tags;
 
 " youcompleteme
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 nnoremap <F12> :YcmCompleter GoTo<CR>
 nnoremap <S-F12> :YcmCompleter GoToDefinition<CR>
+nnoremap <A-F12> :YcmCompleter GoToDeclaration<CR>
 "" Show warnings
 nnoremap <C-S-m> :YcmDiags<CR>
 nmap <leader>D <plug>(YCMHover)
