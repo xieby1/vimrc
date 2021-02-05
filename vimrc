@@ -69,6 +69,11 @@ set shiftwidth=4
 set expandtab
 "" tags support, ';' means upward search, refering to http://vimdoc.sourceforge.net/htmldoc/editing.html#file-searching
 set tags=./tags;
+"" Fold
+set foldmethod=syntax
+""" Set the foldlevel to a high setting,
+""" files are always loaded with opened folds.
+set foldlevel=20
 
 " youcompleteme
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
