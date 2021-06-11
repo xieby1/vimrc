@@ -74,6 +74,8 @@ set foldmethod=syntax
 """ Set the foldlevel to a high setting,
 """ files are always loaded with opened folds.
 set foldlevel=20
+""" mouse support " select by pressing shift key!
+set mouse=a
 
 " youcompleteme
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
