@@ -94,3 +94,7 @@ let g:gitgutter_signs = 1
 let g:gitgutter_highlight_lines = 1
 nnoremap <Leader>g :GitGutterLineHighlightsToggle<CR>:GitGutterSignsToggle<CR>
 
+augroup filetype
+    " detect LLVM IR file
+    au! BufRead,BufNewFile *.ll     set filetype=llvm
+augroup END
