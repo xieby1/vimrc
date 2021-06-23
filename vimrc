@@ -76,6 +76,8 @@ set foldmethod=syntax
 set foldlevel=20
 """ mouse support " select by pressing shift key!
 set mouse=a
+""" matchit.vim " :h matchit-install
+packadd! matchit
 
 " youcompleteme
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
