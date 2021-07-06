@@ -22,3 +22,6 @@
 [submodule "bundle/git-messenger.vim"]
 	path = bundle/git-messenger.vim
 	url = https://github.com/rhysd/git-messenger.vim.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/dense-analysis/ale.git
