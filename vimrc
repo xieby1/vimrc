@@ -10,18 +10,12 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'ycm-core/YouCompleteMe'
-
-Plugin 'preservim/nerdtree'
-
 Plugin 'airblade/vim-gitgutter'
 
 Plugin 'psliwka/vim-smoothie'
 
 Plugin 'inkarkat/vim-mark'
 Plugin 'inkarkat/vim-ingo-library'
-
-Plugin 'rhysd/git-messenger.vim'
 
 Plugin 'dense-analysis/ale'
 " The following are examples of different formats supported.
@@ -80,18 +74,14 @@ set foldlevel=20
 set mouse=a
 """ matchit.vim " :h matchit-install
 packadd! matchit
+"" Preview
+nnoremap <leader>[ :pc<CR>
 
-" youcompleteme
-nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
-nnoremap <F12> :YcmCompleter GoTo<CR>
-nnoremap <S-F12> :YcmCompleter GoToDefinition<CR>
-nnoremap <A-F12> :YcmCompleter GoToDeclaration<CR>
-"" Show warnings
-nnoremap <C-S-m> :YcmDiags<CR>
-nmap <leader>D <plug>(YCMHover)
-
-" nerdtree 
-nnoremap <C-b> :NERDTreeToggle<CR>
+" ALE
+nnoremap <F12> :ALEGoToDefinition<CR>
+nnoremap <S-F12> :ALEFindReferences<CR>
+nnoremap <leader>] :ALEHover<CR>
+nnoremap <leader>f :ALEFix<CR>
 
 " gitgutter
 let g:gitgutter_signs = 1
