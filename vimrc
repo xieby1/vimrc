@@ -54,10 +54,11 @@ filetype plugin indent on    " required
 " vim
 "" Highlight searches
 set hlsearch
+nnoremap <F3> :nohlsearch<CR>
 "" Show line number
 set number
 "" indent
-set smartindent
+"set smartindent " not good, indentation in empty line cannot be auto removed
 """ show existing tab with 4 spaces width
 set tabstop=4
 """ when indenting with '>', use 4 spaces width
@@ -77,6 +78,9 @@ set mouse=a
 packadd! matchit
 "" Preview
 nnoremap <leader>[ :pc<CR>
+"" highlight unwanted whitespace
+set list
+set listchars=tab:>-,trail:-
 
 " ALE
 nnoremap <F12> :ALEGoToDefinition<CR>
