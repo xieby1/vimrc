@@ -56,12 +56,13 @@ filetype plugin indent on    " required
 set hlsearch
 "" Show line number
 set number
-filetype plugin indent on
-"" show existing tab with 4 spaces width
+"" indent
+set smartindent
+""" show existing tab with 4 spaces width
 set tabstop=4
-"" when indenting with '>', use 4 spaces width
+""" when indenting with '>', use 4 spaces width
 set shiftwidth=4
-"" On pressing tab, insert 4 spaces
+""" On pressing tab, insert 4 spaces
 set expandtab
 "" tags support, ';' means upward search, refering to http://vimdoc.sourceforge.net/htmldoc/editing.html#file-searching
 set tags=./tags;
