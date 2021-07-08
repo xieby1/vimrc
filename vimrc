@@ -90,6 +90,12 @@ nnoremap <S-F12> :ALEFindReferences<CR>
 nnoremap <leader>] :ALEHover<CR>
 nnoremap <leader>f :ALEFix<CR>
 "let g:ale_completion_enabled = 1
+"" Assign Fixers
+let g:ale_fixers = {
+            \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+            \}
+"" add linter to ALE echo msg
+let g:ale_echo_msg_format = '[%linter%]: %code: %%s'
 
 " gitgutter
 let g:gitgutter_signs = 1
