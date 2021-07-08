@@ -18,6 +18,8 @@ Plugin 'inkarkat/vim-mark'
 Plugin 'inkarkat/vim-ingo-library'
 
 Plugin 'dense-analysis/ale'
+
+Plugin 'ycm-core/YouCompleteMe'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -87,6 +89,7 @@ nnoremap <F12> :ALEGoToDefinition<CR>
 nnoremap <S-F12> :ALEFindReferences<CR>
 nnoremap <leader>] :ALEHover<CR>
 nnoremap <leader>f :ALEFix<CR>
+"let g:ale_completion_enabled = 1
 
 " gitgutter
 let g:gitgutter_signs = 1
