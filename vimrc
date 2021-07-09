@@ -57,6 +57,8 @@ filetype plugin indent on    " required
 "" Highlight searches
 set hlsearch
 nnoremap <F3> :nohlsearch<CR>
+""" clear highlight created by vim-mark
+nnoremap <leader><F3> :MarkClear<CR>
 "" Show line number
 set number
 "" indent
