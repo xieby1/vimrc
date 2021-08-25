@@ -108,3 +108,47 @@ augroup filetype
     " detect LLVM IR file
     au! BufRead,BufNewFile *.ll     set filetype=llvm
 augroup END
+
+" cscope
+" inspired by https://linux-kernel-labs.github.io/refs/heads/master/labs/introduction.html
+if has("cscope")
+        " Look for a 'cscope.out' file starting from the current directory,
+        " going up to the root directory.
+        let s:dirs = split(getcwd(), "/")
+        while s:dirs != []
+                let s:path = "/" . join(s:dirs, "/")
+                if (filereadable(s:path . "/cscope.out"))
+                        execute "cs add " . s:path . "/cscope.out " . s:path . " -v"
+                        break
+                endif
+                let s:dirs = s:dirs[:-2]
+        endwhile
+
+        set csto=0  " Use cscope first, then ctags
+        set cst     " Only search cscope
+        set csverb  " Make cs verbose
+
+        " 0 symbol
+        nmap <C-\>s :cs find s <C-R><C-W><CR>
+        " 1 definition
+        nmap <C-\>g :cs find g <C-R><C-W><CR>
+        " 2 called func
+        nmap <C-\>d :cs find d <C-R><C-W><CR>
+        " 3 calling func
+        nmap <C-\>c :cs find c <C-R><C-W><CR>
+        " 4 text string
+        nmap <C-\>t :cs find t <C-R><C-W><CR>
+        " 6 egrep pattern
+        nmap <C-\>e :cs find e <C-R><C-W><CR>
+        " 7 file
+        nmap <C-\>F :cs find f
+        " 8 including file
+        nmap <C-\>i :cs find i ^<C-R><C-F>$<CR>
+        " 9 assign
+        nmap <C-\>a :cs find a <C-R><C-W><CR>
+
+        " Open a quickfix window for the following queries.
+        "set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
+        "nmap <F6> :cnext <CR>
+        "nmap <F5> :cprev <CR>
+endif
