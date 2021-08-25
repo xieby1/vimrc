@@ -20,6 +20,9 @@ Plugin 'inkarkat/vim-ingo-library'
 Plugin 'dense-analysis/ale'
 
 Plugin 'ycm-core/YouCompleteMe'
+
+Plugin 'tpope/vim-fugitive'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
