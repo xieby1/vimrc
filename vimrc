@@ -23,6 +23,7 @@ Plugin 'ycm-core/YouCompleteMe'
 
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'rhysd/git-messenger.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -155,3 +156,7 @@ if has("cscope")
         "nmap <F6> :cnext <CR>
         "nmap <F5> :cprev <CR>
 endif
+
+" git-messenger
+"" popup window no close automatically
+let g:git_messenger_close_on_cursor_moved=v:false
