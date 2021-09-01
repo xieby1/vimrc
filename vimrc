@@ -61,8 +61,6 @@ filetype plugin indent on    " required
 "" Highlight searches
 set hlsearch
 nnoremap <F3> :nohlsearch<CR>
-""" clear highlight created by vim-mark
-nnoremap <leader><F3> :MarkClear<CR>
 "" Show line number
 set number
 "" indent
@@ -89,6 +87,12 @@ nnoremap <leader>[ :pc<CR>
 "" highlight unwanted whitespace
 set list
 set listchars=tab:>-,trail:-
+
+" vim-mark
+"" clear highlight created by vim-mark
+nnoremap <leader><F3> :MarkClear<CR>
+"" show all marks
+nnoremap <leader>M :Marks<CR>
 
 " ALE
 nnoremap <F12> :ALEGoToDefinition<CR>
