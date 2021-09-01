@@ -134,22 +134,30 @@ if has("cscope")
 
         " 0 symbol
         nmap <C-\>s :cs find s <C-R><C-W><CR>
+        nmap <C-\>S :cs find s<Space>
         " 1 definition
         nmap <C-\>g :cs find g <C-R><C-W><CR>
+        nmap <C-\>G :cs find g<Space>
         " 2 called func
         nmap <C-\>d :cs find d <C-R><C-W><CR>
+        nmap <C-\>D :cs find d<Space>
         " 3 calling func
         nmap <C-\>c :cs find c <C-R><C-W><CR>
+        nmap <C-\>C :cs find c<Space>
         " 4 text string
         nmap <C-\>t :cs find t <C-R><C-W><CR>
+        nmap <C-\>T :cs find t<Space>
         " 6 egrep pattern
         nmap <C-\>e :cs find e <C-R><C-W><CR>
+        nmap <C-\>e :cs find e<Space>
         " 7 file
-        nmap <C-\>F :cs find f
+        nmap <C-\>F :cs find f<Space>
         " 8 including file
         nmap <C-\>i :cs find i ^<C-R><C-F>$<CR>
+        nmap <C-\>I :cs find i<Space>
         " 9 assign
         nmap <C-\>a :cs find a <C-R><C-W><CR>
+        nmap <C-\>A :cs find a<Space>
 
         " Open a quickfix window for the following queries.
         "set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
