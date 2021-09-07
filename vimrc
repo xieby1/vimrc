@@ -153,7 +153,7 @@ if has("cscope")
         nmap <C-\>T :cs find t<Space>
         " 6 egrep pattern
         nmap <C-\>e :cs find e <C-R><C-W><CR>
-        nmap <C-\>e :cs find e<Space>
+        nmap <C-\>E :cs find e<Space>
         " 7 file
         nmap <C-\>F :cs find f<Space>
         " 8 including file
