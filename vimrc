@@ -87,6 +87,8 @@ nnoremap <leader>[ :pc<CR>
 "" highlight unwanted whitespace
 set list
 set listchars=tab:>-,trail:-
+"" syntax
+syntax on
 
 " vim-mark
 "" clear highlight created by vim-mark
