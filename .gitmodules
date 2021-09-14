@@ -25,3 +25,6 @@
 [submodule "bundle/git-messenger.vim"]
 	path = bundle/git-messenger.vim
 	url = https://github.com/rhysd/git-messenger.vim.git
+[submodule "bundle/DrawIt"]
+	path = bundle/DrawIt
+	url = https://github.com/vim-scripts/DrawIt.git

@@ -24,6 +24,8 @@ Plugin 'ycm-core/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'rhysd/git-messenger.vim'
+
+Plugin 'vim-scripts/DrawIt'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
