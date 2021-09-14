@@ -91,6 +91,8 @@ set list
 set listchars=tab:>-,trail:-
 "" syntax
 syntax on
+"" backspace
+set backspace=indent,eol,start
 
 " vim-mark
 "" clear highlight created by vim-mark
