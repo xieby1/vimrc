@@ -25,6 +25,7 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'rhysd/git-messenger.vim'
 
+" comment autoload/DrawIt.vim line 378: ... <Leader>f ...
 Plugin 'vim-scripts/DrawIt'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -93,6 +94,16 @@ set listchars=tab:>-,trail:-
 syntax on
 "" backspace
 set backspace=indent,eol,start
+"" line wrap
+""" https://stackoverflow.com/questions/248102/is-there-any-command-to-toggle-enable-auto-text-wrapping
+:function ToggleWrap()
+: if (&wrap == 1)
+:   set nowrap
+: else
+:   set wrap
+: endif
+:endfunction
+nnoremap <F9> :call ToggleWrap()<CR>
 
 " vim-mark
 "" clear highlight created by vim-mark
