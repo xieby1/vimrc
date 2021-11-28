@@ -27,6 +27,8 @@ Plugin 'rhysd/git-messenger.vim'
 
 " comment autoload/DrawIt.vim line 378: ... <Leader>f ...
 Plugin 'vim-scripts/DrawIt'
+
+Plugin 'LnL7/vim-nix'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
