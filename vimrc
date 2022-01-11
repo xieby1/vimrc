@@ -29,6 +29,8 @@ Plugin 'rhysd/git-messenger.vim'
 Plugin 'vim-scripts/DrawIt'
 
 Plugin 'LnL7/vim-nix'
+
+Plugin 'voldikss/vim-floaterm'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
